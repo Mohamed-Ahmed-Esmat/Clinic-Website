@@ -703,7 +703,8 @@ button {
     font-weight: 500;
 }
 
-.Email_text {
+.Email_text,
+.Telephone {
     width: 100%;
     float: left;
     font-size: 18px;
@@ -714,16 +715,7 @@ button {
     margin-top: 30px;
 }
 
-.Telephone{
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #bebebe;
-    background-color: #ffffff;
-    padding: 5px 15px;
-    border: 0px;
-    margin-top: 30px;
-}
+
 
 .massage-bt {
     width: 100%;
