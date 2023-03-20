@@ -324,9 +324,7 @@ button {
 }
 
 #main_slider .carousel-control-prev:hover,
-#main_slider .carousel-control-next:hover,
-#main_slider .carousel-control-prev:focus,
-#main_slider .carousel-control-next:focus {
+#main_slider .carousel-control-next:hover {
     border: 4px solid #4bc5b8;
     color: #4bc5b8;
 }
@@ -335,14 +333,14 @@ button {
     position: absolute;
     left: 200px;
     top: 85%;
+    
 }
 
 #main_slider a.carousel-control-prev {
     position: absolute;
     left: 120px;
     top: 85%;
-    border: 4px solid #4bc5b8;
-    color: #4bc5b8;
+   
 }
 
 #main_slider .carousel-control-prev,
