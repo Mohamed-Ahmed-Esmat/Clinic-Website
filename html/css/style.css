@@ -486,13 +486,13 @@ button {
     float: left;
     font-size: 18px;
     color: #ffffff;
-    background-color: #1becde;
+    background-color: #252525;
     padding: 7px 0px;
     text-align: center;
 }
 
 .getquote_bt_1 a:hover {
-    background-color: #252525;
+    background-color: #1becde;
 }
 
 .knowledge_section {
@@ -640,14 +640,14 @@ button {
     float: left;
     font-size: 18px;
     color: #ffffff;
-    background-color: #1becde;
+    background-color: #252525;
     padding: 7px 0px;
     text-align: center;
     margin-top: 50px;
 }
 
 .getquote_bt a:hover {
-    background-color: #252525;
+    background-color: #1becde;
 }
 
 .contact_section {
