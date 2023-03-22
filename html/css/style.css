@@ -276,7 +276,7 @@ button {
 .banner_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 25px;
     margin: 0px;
     color: #252525;
 }
@@ -371,7 +371,7 @@ button {
 .health_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 20px;
     color: #252525;
     margin: 0px;
 }
@@ -515,7 +515,7 @@ button {
 .knowledge_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 20px;
     color: #ffffff;
     margin: 0px;
 }
@@ -603,7 +603,7 @@ button {
 .daily_text_1 {
     width: 40%;
     margin: 0 auto;
-    text-align: center;
+    text-align: auto;
     font-weight: bold;
     font-size: 24px;
     display: block;
@@ -856,7 +856,7 @@ button {
 
 .adderss_text {
     width: 100%;
-    float: left;
+    float: right;
     font-size: 24px;
     color: #ffffff;
     padding-bottom: 30px;
@@ -944,12 +944,11 @@ input.Enter_text::placeholder {
 }
 
 .copyright_text {
-    width: 100%;
-    float: left;
+    text-align: auto;
+    width: 90%;
+    color: #d6d6d6;
     font-size: 16px;
     margin-left: 0px;
-    color: #fff;
-    text-align: center;
 }
 
 .copyright_text a {
