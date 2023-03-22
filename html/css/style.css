@@ -419,10 +419,7 @@ button {
     display: none;
 }
 
-.main:hover::after {
-    background-color: rgba(27, 236, 222, 0.5);
-    display: block;
-}
+
 
 .image {
     opacity: 1;
@@ -444,13 +441,7 @@ button {
     text-align: center;
 }
 
-.image_main:hover .image {
-    background-color: rgba(27, 236, 222, 0.5);
-}
 
-.image_main:hover .middle {
-    opacity: 1;
-}
 
 .text {
     background-color: #252525;
@@ -465,13 +456,7 @@ button {
     position: relative;
 }
 
-.image_main_1:hover .image {
-    background-color: rgba(27, 236, 222, 0.5);
-}
 
-.image_main_1:hover .middle {
-    opacity: 1;
-}
 
 .getquote_bt_1 {
     width: 180px;
@@ -706,7 +691,7 @@ button {
     width: 100%;
     float: left;
     font-size: 18px;
-    color: #bebebe;
+    color: (255,255,255);
     background-color: #ffffff;
     padding: 5px 15px;
     border: 0px;
@@ -718,7 +703,7 @@ button {
 .massage-bt {
     width: 100%;
     float: left;
-    color: #bebebe;
+    color: (255,255,255);
     height: 110px;
     font-size: 18px;
     padding: 36px 20px 10px 20px;
