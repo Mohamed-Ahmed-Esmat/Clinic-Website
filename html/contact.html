@@ -82,10 +82,18 @@
                      <h1 class="book_text">Appoinment Booking</h1>
                      <input type="text" class="Email_text" placeholder="Name" name="Name">
                      <input type="tel" class="Telephone" placeholder="Phone Number" name="Name" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">
-                     <select class="Email_text" placeholder ="Book">
+                     <select class="Email_text" id ="Book" placeholder ="Book">
+                        <option value="" disabled selected>Book Type</option>
                         <option value="res">Reservation</option>
                         <option value="option2">Teleconsultation</option>
                         <option value="option3">Operation</option>
+                      </select>
+
+                      <select class="Email_text" id="Available_Dates" placeholder ="Available_Dates">
+                        <option value="" disabled selected>Available Dates</option>
+                        <option value="res">15th of June</option>
+                        <option value="option2">5th of July</option>
+                        <option value="option3">13th of July</option>
                       </select>
                         <div class="send_bt"><a href="#">SEND</a></div>
                      </div>
