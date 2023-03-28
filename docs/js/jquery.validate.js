@@ -1446,6 +1446,7 @@ $.extend( $.validator, {
 		range: function( value, element, param ) {
 			return this.optional( element ) || ( value >= param[ 0 ] && value <= param[ 1 ] );
 		},
+		
 
 		// https://jqueryvalidation.org/step-method/
 		step: function( value, element, param ) {
