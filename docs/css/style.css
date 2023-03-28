@@ -674,7 +674,7 @@ button {
 }
 
 .Email_text,
-.Telephone {
+#Telephone {
     width: 100%;
     float: left;
     font-size: 18px;
@@ -699,14 +699,15 @@ button {
     margin-top: 30px;
 }
 
-.send_bt {
+/*.send_bt {
     width: 140px;
     margin: 0 auto;
     text-align: center;
-}
+}*/
 
-.send_bt a {
+.send_bt  {
     width: 100%;
+    align-content: center;
     float: left;
     font-size: 18px;
     color: #ffffff;
@@ -717,8 +718,8 @@ button {
     text-transform: uppercase;
 }
 
-.send_bt a:hover {
-    background-color: #252525;
+.send_bt :hover {
+    background-color: #1becde;
 }
 
 .client_section {

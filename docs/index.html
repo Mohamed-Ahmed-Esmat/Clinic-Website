@@ -30,6 +30,7 @@
    <link rel="stylesheet" href="css/owl.theme.default.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    <script src="js/search.js"></script> 
+   
 </head>
 
 <body>
@@ -183,25 +184,27 @@
                   </div>
                </div>
                <div class="col-md-6">
+                  <form id="contact-form">
                   <div class="contact_box">
                      <h1 class="book_text">Appoinment Booking</h1>
-                     <input type="text" class="Email_text" placeholder="Name" name="Name">
-                     <input type="tel" class="Telephone" placeholder="Phone Number" name="Name" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">
-                     <select class="Email_text" id ="Book" placeholder ="Book">
-                        <option value="" disabled selected>Book Type</option>
+                     <input type="text" class="Email_text" placeholder="Name" name="Name" required>
+                     <input type="tel" id="Telephone" placeholder="Phone Number" name="Telephone" pattern="\d{11}" oninvalid="this.setCustomValidity('Please enter a valid phone number in the format xxx-xxx-xxxx')" maxlength="11" required>
+                     <select class="Email_text" id ="Book" placeholder ="Book" name ="Book" required>
+                        <option value="" disabled selected>Booking Type</option>
                         <option value="res">Reservation</option>
                         <option value="option2">Teleconsultation</option>
                         <option value="option3">Operation</option>
                       </select>
 
-                      <select class="Email_text" id="Available_Dates" placeholder ="Available_Dates">
+                      <select class="Email_text" id="Available_Dates" placeholder ="Available_Dates" name="Available_Dates" required>
                         <option value="" disabled selected>Available Dates</option>
                         <option value="res">15th of June</option>
                         <option value="option2">5th of July</option>
                         <option value="option3">13th of July</option>
                       </select>
                       
-                     <div class="send_bt"><a href="#">SEND</a></div>
+                     <button type="submit" class="send_bt">SEND</button>
+                  </form>
                   </div>
                </div>
             </div>

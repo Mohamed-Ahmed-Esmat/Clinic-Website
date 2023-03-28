@@ -151,34 +151,40 @@ $(function () {
 
 	/* Contact-form
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	$.validator.setDefaults({
+	/*$.validator.setDefaults({
 		submitHandler: function () {
 			alert("submitted!");
 		}
-	});
+	});*/
 
 	$(document).ready(function () {
 		$("#contact-form").validate({
 			rules: {
-				firstname: "required",
-				email: {
+				Name: "required",
+				Telephone: {
 					required: true,
-					email: true
+					number: true,
+					minlength: 11
 				},
-				lastname: "required",
-				message: "required",
-				agree: "required"
+				Book:{
+					required: true,
+				}
+				
 			},
 			messages: {
-				firstname: "Please enter your firstname",
-				email: "Please enter a valid email address",
-				lastname: "Please enter your lastname",
-				username: {
-					required: "Please enter a username",
-					minlength: "Your username must consist of at least 2 characters"
+				Name: "Please enter your name",
+				Telephone: {
+					required: "Please enter your phone number",
+					number: "Please enter only digits",
+					minlength: "Your telephone must consist of at least 11 digits"
+					
 				},
-				message: "Please enter your Message",
-				agree: "Please accept our policy"
+				Book:
+				{
+					required: "Please choose your booking type",
+				} ,
+				Available_Dates: "Please choose from the available dates",
+				
 			},
 			errorElement: "div",
 			errorPlacement: function (error, element) {
@@ -198,8 +204,9 @@ $(function () {
 				$(element).parents(".col-md-4, .col-md-12").addClass("has-success").removeClass("has-error");
 			}
 		});
+		
 	});
-
+	
 	/* heroslider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
