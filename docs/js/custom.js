@@ -216,7 +216,7 @@ $(function () {
   var messageElement = document.querySelector('#message');
   if (selectElement.value === '') {
     event.preventDefault();
-    messageElement.textContent = 'Please select a date from the dropdown list.';
+    messageElement.textContent = 'Please select the most suitable date for you.';
     messageElement.style.display = 'block';
   } else {
     messageElement.style.display = 'none';
@@ -225,7 +225,7 @@ $(function () {
   var messageElement = document.querySelector('#message1');
   if (selectElement.value === '') {
     event.preventDefault();
-    messageElement.textContent = 'Please select your booking type from the dropdown list.';
+    messageElement.textContent = 'Please select your booking type from the list.';
     messageElement.style.display = 'block';
   } else {
     messageElement.style.display = 'none';
