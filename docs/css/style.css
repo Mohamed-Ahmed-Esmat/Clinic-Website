@@ -969,3 +969,10 @@ input.Enter_text::placeholder {
   #searchBar button {
     margin-left: 5px;
   }
+
+  #message,
+  #message1 {
+    display: none;
+    color:#83888A
+  }
+  

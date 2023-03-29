@@ -168,6 +168,9 @@ $(function () {
 				},
 				Book:{
 					required: true,
+				},
+				Available_Dates:{
+					required: true,
 				}
 				
 			},
@@ -176,14 +179,16 @@ $(function () {
 				Telephone: {
 					required: "Please enter your phone number",
 					number: "Please enter only digits",
-					minlength: "Your telephone must consist of at least 11 digits"
+					minlength: "Your telephone must consist 11 digits"
 					
 				},
 				Book:
 				{
 					required: "Please choose your booking type",
 				} ,
-				Available_Dates: "Please choose from the available dates",
+				Available_Dates: {
+					required: "Please choose your booking type",
+				}
 				
 			},
 			errorElement: "div",
@@ -206,6 +211,26 @@ $(function () {
 		});
 		
 	});
+	document.querySelector('form').addEventListener('submit', function(event) {
+		var selectElement = document.querySelector('#Available_Dates');
+  var messageElement = document.querySelector('#message');
+  if (selectElement.value === '') {
+    event.preventDefault();
+    messageElement.textContent = 'Please select a date from the dropdown list.';
+    messageElement.style.display = 'block';
+  } else {
+    messageElement.style.display = 'none';
+  }
+  var selectElement = document.querySelector('#Book');
+  var messageElement = document.querySelector('#message1');
+  if (selectElement.value === '') {
+    event.preventDefault();
+    messageElement.textContent = 'Please select your booking type from the dropdown list.';
+    messageElement.style.display = 'block';
+  } else {
+    messageElement.style.display = 'none';
+  }
+	  });
 	
 	/* heroslider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
