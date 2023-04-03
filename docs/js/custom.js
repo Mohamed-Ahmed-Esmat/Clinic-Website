@@ -179,7 +179,7 @@ $(function () {
 				Telephone: {
 					required: "Please enter your phone number",
 					number: "Please enter only digits",
-					minlength: "Your telephone must consist 11 digits"
+					minlength: "Your telephone number should contain 11 digits"
 					
 				},
 				Book:
